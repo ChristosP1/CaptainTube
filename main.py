@@ -9,7 +9,7 @@ def interface():
     col1, col2, col3 = st.columns([2, 1, 2])
 
     with col2:
-        st.image("logo\captain_tube_logo.png", width=120)
+        st.image("logo/captain_tube_logo.png", width=120)
     
     
     # Radio button to choose between MP3 and MP4
