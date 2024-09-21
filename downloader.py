@@ -1,4 +1,4 @@
-from pytube import YouTube
+from pytubefix import YouTube
 import streamlit as st
 from tools import is_youtube_url, find_downloads_folder
 import os
