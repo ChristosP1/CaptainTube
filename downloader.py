@@ -34,8 +34,8 @@ def Download(link, download_format):
         # Handle MP3 download (audio only)
         elif download_format == 'MP3':
             st.write("ok4")
-            streams = youtubeObject.streams
-            st.write(streams)
+            st.write(youtubeObject)
+            stream = youtubeObject.streams.filter(only_audio=True).first()
             st.write("ok5")
             if stream:
                 out_file = stream.download(output_path=downloads_folder)
